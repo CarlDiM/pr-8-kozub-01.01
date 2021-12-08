@@ -1,0 +1,42 @@
+﻿<Window x:Class="pr_8_kozub_01._01.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_8_kozub_01._01"
+        mc:Ignorable="d"
+        Title="Практическая работа №8" Height="249" Width="459" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu VerticalAlignment="Top">
+            <MenuItem x:Name="compare" Header="Сравнить" Click="compare_Click"/>
+        </Menu>
+        <GroupBox Header="Первый автобус" Margin="10,19,244,39">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="4,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="40"><Run Language="ru-ru" Text="Марка: "/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="4,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Language="ru-ru" Text="Модель: "/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="4,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="20"><Run Language="ru-ru" Text="Вместимость: "/></TextBlock>
+                <TextBox x:Name="inputFirstBrand" HorizontalAlignment="Left" Margin="49,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="20"/>
+                <TextBox x:Name="inputFirstModel" HorizontalAlignment="Left" Margin="54,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Height="20"/>
+                <TextBox x:Name="inputFirstCapacity" HorizontalAlignment="Left" Margin="84,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="20"/>
+                <Button x:Name="createFirstBus" Content="Создать автобус" HorizontalAlignment="Left" Margin="4,83,0,0" VerticalAlignment="Top" Width="160" Click="createFirstBus_Click"/>
+                <Button x:Name="firstBusInformation" Content="Информация " HorizontalAlignment="Left" Margin="4,108,0,0" VerticalAlignment="Top" Width="160" Click="firstBusInformation_Click" />
+
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Второй автобус" Margin="220,19,39,39">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" Margin="4,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="40"><Run Language="ru-ru" Text="Марка: "/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="4,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Language="ru-ru" Text="Модель: "/></TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="4,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75" Height="20"><Run Language="ru-ru" Text="Вместимость: "/></TextBlock>
+                <TextBox x:Name="inputSecondBrand" HorizontalAlignment="Left" Margin="49,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Height="20"/>
+                <TextBox x:Name="inputSecondModel" HorizontalAlignment="Left" Margin="54,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="110" Height="20"/>
+                <TextBox x:Name="inputSecondCapacity" HorizontalAlignment="Left" Margin="84,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="80" Height="20"/>
+                <Button x:Name="createSecondBus" Content="Создать автобус" HorizontalAlignment="Left" Margin="4,83,0,0" VerticalAlignment="Top" Width="160" Click="createSecondBus_Click"/>
+                <Button x:Name="secondBusInformation" Content="Информация " HorizontalAlignment="Left" Margin="4,108,0,0" VerticalAlignment="Top" Width="160" Click="secondBusInformation_Click" />
+            </Grid>
+        </GroupBox>
+        <Button x:Name="about" Content="О программе" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top" Width="155" Click="about_Click"/>
+        <Button x:Name="exit" Content="Выход" HorizontalAlignment="Left" Margin="250,179,0,0" VerticalAlignment="Top" Width="155" Click="exit_Click"/>
+
+    </Grid>
+</Window>
